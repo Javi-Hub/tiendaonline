@@ -62,5 +62,7 @@ public class Carrito {
 		detalles.add(detalle);
 	}
 		
-	
+	public void eliminarProducto(Producto producto) {
+		detalles.remove(producto);
+	}
 }
