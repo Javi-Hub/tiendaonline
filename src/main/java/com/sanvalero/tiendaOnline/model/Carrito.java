@@ -57,6 +57,16 @@ public class Carrito {
 		this.descuento = descuento;
 	}
 	
+	public List<DetalleCarrito> getDetalles() {
+		return detalles;
+	}
+
+
+	public void setDetalles(List<DetalleCarrito> detalles) {
+		this.detalles = detalles;
+	}
+
+
 	public void anadirProducto(Producto producto, int cantidad) {
 		DetalleCarrito detalle = new DetalleCarrito(producto.getPrecio(), cantidad, producto);
 		detalles.add(detalle);

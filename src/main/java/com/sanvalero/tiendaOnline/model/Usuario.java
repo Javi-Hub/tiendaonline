@@ -1,11 +1,16 @@
 package com.sanvalero.tiendaOnline.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Usuario {
 	private String nombreUsuario;
 	private String contrasena;
 	private String email;
 	private String dni;
 	private String direccion;
+	private List<Mensaje> mensajesEnviados;
+	private List<Mensaje> mensajesRecibidos;
 	
 	
 	public Usuario(String nombreUsuario, String contrasena, String email, String dni, String direccion) {
@@ -15,6 +20,9 @@ public class Usuario {
 		this.email = email;
 		this.dni = dni;
 		this.direccion = direccion;
+		
+		mensajesEnviados = new ArrayList<>();
+		mensajesRecibidos = new ArrayList<>();
 	}
 	
 	public String getNombreUsuario() {
